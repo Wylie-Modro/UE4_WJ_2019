@@ -57,8 +57,11 @@ void AYueLaoCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-	PlayerInputComponent->BindAxis("MoveForward", this, &AYueLaoCharacter::MoveForward);
-	PlayerInputComponent->BindAxis("MoveRight", this, &AYueLaoCharacter::MoveRight);
+	PlayerInputComponent->BindAxis("MoveForwardW", this, &AYueLaoCharacter::MoveForwardW);
+	PlayerInputComponent->BindAxis("MoveForwardArrow", this, &AYueLaoCharacter::MoveForwardArrow);
+
+	PlayerInputComponent->BindAxis("MoveRightD", this, &AYueLaoCharacter::MoveRightD);
+	PlayerInputComponent->BindAxis("MoveRightArrow", this, &AYueLaoCharacter::MoveRightArrow);
 
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "turn" handles devices that provide an absolute delta, such as a mouse.
@@ -104,7 +107,7 @@ void AYueLaoCharacter::LookUpAtRate(float Rate)
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
-void AYueLaoCharacter::MoveForward(float Value)
+void AYueLaoCharacter::MoveForwardW(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.0f))
 	{
@@ -118,7 +121,23 @@ void AYueLaoCharacter::MoveForward(float Value)
 	}
 }
 
-void AYueLaoCharacter::MoveRight(float Value)
+
+void AYueLaoCharacter::MoveForwardArrow(float Value)
+{
+	if ((Controller != NULL) && (Value != 0.0f))
+	{
+		// find out which way is forward
+		const FRotator Rotation = Controller->GetControlRotation();
+		const FRotator YawRotation(0, Rotation.Yaw, 0);
+
+		// get forward vector
+		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		AddMovementInput(Direction, Value);
+	}
+}
+
+
+void AYueLaoCharacter::MoveRightArrow(float Value)
 {
 	if ( (Controller != NULL) && (Value != 0.0f) )
 	{
@@ -132,3 +151,20 @@ void AYueLaoCharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+
+void AYueLaoCharacter::MoveRightD(float Value)
+{
+	if ( (Controller != NULL) && (Value != 0.0f) )
+	{
+		// find out which way is right
+		const FRotator Rotation = Controller->GetControlRotation();
+		const FRotator YawRotation(0, Rotation.Yaw, 0);
+	
+		// get right vector 
+		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+		// add movement in that direction
+		AddMovementInput(Direction, Value);
+	}
+}
+
+
