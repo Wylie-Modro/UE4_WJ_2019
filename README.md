@@ -9,13 +9,16 @@ Git Hub link
 https://github.com/Wylie-Modro/UE4_WJ_2019
 
 Art
+
 Eric Jasso 3D  & 
 Rohanie Lucero 2D
 
 Game Design
+
 Carlos Noguez
 
 Programming
+
 Leo Jasso &  
 Will Wylie-Modro
 
