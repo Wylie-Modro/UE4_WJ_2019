@@ -10,10 +10,11 @@ Git Hub link:
 [https://github.com/Wylie-Modro/UE4_WJ_2019]
 
 Itch.io Game link: 
-[https://itch.io/jam/2019-winter-ue4jam]
+[https://octoprogames.itch.io/moon-bound]
 
 UE4 Winter Game Jam link: 
-[https://octoprogames.itch.io/moon-bound]
+[https://itch.io/jam/2019-winter-ue4jam]
+
 
 **Art:** Eric Jasso (3D) & Rohanie Lucero (2D)
 
