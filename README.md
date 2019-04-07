@@ -5,9 +5,6 @@
 
 
 L Crew 
-No Premade Assets 
-Concept art avalible upon request 
-Lcrewgames@gmail.com to contact any member 
 
 Git Hub link:
 [https://github.com/Wylie-Modro/UE4_WJ_2019]
@@ -23,3 +20,10 @@ UE4 Winter Game Jam link:
 **Game Design:** Carlos Noguez
 
 **Programming:** Leo Jasso & Will Wylie-Modro
+
+
+No Premade Assets
+
+Concept art avalible upon request 
+
+Lcrewgames@gmail.com to contact any member 
