@@ -1,7 +1,7 @@
-# UE4_WJ_2019
+## UE4_WJ_2019
 
-Moon Bound
-Two bound lovers test the strength of their bond in this conflict puzzle game.
+# Moon Bound
+## Two bound lovers test the strength of their bond in this conflict puzzle game.
 
 
 L Crew 
@@ -10,19 +10,16 @@ Concept art avalible upon request
 Lcrewgames@gmail.com to contact any member 
 
 Git Hub link:
-https://github.com/Wylie-Modro/UE4_WJ_2019
+[https://github.com/Wylie-Modro/UE4_WJ_2019]
 
-Itch.io links: 
-https://itch.io/jam/2019-winter-ue4jam
-https://octoprogames.itch.io/moon-bound
+Itch.io Game link: 
+[https://itch.io/jam/2019-winter-ue4jam]
 
-Art
-Eric Jasso 3D  & 
-Rohanie Lucero 2D
+UE4 Winter Game Jam link: 
+[https://octoprogames.itch.io/moon-bound]
 
-Game Design
-Carlos Noguez
+**Art:** Eric Jasso (3D) & Rohanie Lucero (2D)
 
-Programming
-Leo Jasso &  
-Will Wylie-Modro
+**Game Design:** Carlos Noguez
+
+**Programming:** Leo Jasso & Will Wylie-Modro
